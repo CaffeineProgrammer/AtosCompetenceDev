@@ -1,0 +1,15 @@
+.flex-container {
+  flex-direction: column;
+  margin: 0 200px 0 200px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+}

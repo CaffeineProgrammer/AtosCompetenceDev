@@ -12,12 +12,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
 import { CompetenceComponent } from './components/competence/competence.component';
+import { DropDownListComponent } from './components/drop-down-list/drop-down-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CompetenceComponent
+    CompetenceComponent,
+    DropDownListComponent
   ],
   imports: [
     BrowserModule,
