@@ -11,12 +11,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
+import { DropDownListComponent } from './components/drop-down-list/drop-down-list.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent
-  ],
+  declarations: [AppComponent, HomeComponent, DropDownListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,6 +26,6 @@ import { HomeComponent } from './components/home/home.component';
     MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
