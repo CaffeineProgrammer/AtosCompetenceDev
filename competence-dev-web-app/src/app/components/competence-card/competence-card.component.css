@@ -1,0 +1,21 @@
+.competence-card-container {
+  width: 350px;
+  height: 320px;
+  background-color: #f85050;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.competence-card-info {
+  height: 144px;
+  overflow: hidden;
+}
+
+h2 {
+  color: #fff;
+  font-size: 28px;
+}
+
+p {
+  color: #fff;
+}
