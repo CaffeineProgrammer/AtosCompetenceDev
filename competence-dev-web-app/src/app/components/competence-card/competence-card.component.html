@@ -1,6 +1,6 @@
 <div [className]="'competence-card-container'">
   <div [className]="'competence-card-title'"><h2>Cloud computing</h2></div>
-  <div><p>By Frits</p></div>
+  <div [className]="'competence-card-presenter'"><p>By Frits</p></div>
   <div [className]="'competence-card-info'">
     <p>
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -12,5 +12,7 @@
       est laborum."
     </p>
   </div>
-  <div><button>Visit</button></div>
+  <div [className]="'competence-card-button-container'">
+    <button [className]="'competence-card-button'">Visit</button>
+  </div>
 </div>

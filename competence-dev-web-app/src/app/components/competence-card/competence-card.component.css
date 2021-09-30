@@ -1,14 +1,47 @@
 .competence-card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 350px;
   height: 320px;
-  background-color: #f85050;
   padding: 16px;
   border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(248, 80, 80, 1) 100%
+  );
+}
+
+.competence-card-title {
+  align-self: flex-start;
+}
+
+.competence-card-presenter {
+  margin-bottom: 20px;
+  align-self: flex-start;
 }
 
 .competence-card-info {
+  display: -webkit-box;
   height: 144px;
+  line-height: 2;
   overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.competence-card-button-container {
+  align-self: flex-start;
+}
+
+.competence-card-button {
+  background: rgba(248, 80, 80, 1);
+  border: 1px solid;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 8px 34px;
 }
 
 h2 {
@@ -18,4 +51,5 @@ h2 {
 
 p {
   color: #fff;
+  margin: 0;
 }
