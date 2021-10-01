@@ -6,17 +6,12 @@
     display: flex;
     justify-content: center;
   }
-}
 
-.title-container {
-  display: flex;
-  justify-content: center;
-}
-
-h1 {
-  color: #fff;
-  font-size: 34px;
-  font-weight: bold;
+  &__title h1 {
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+  }
 }
 
 /* 
