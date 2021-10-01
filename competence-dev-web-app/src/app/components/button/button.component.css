@@ -1,0 +1,14 @@
+button {
+  background: rgba(248, 80, 80, 1);
+  border: 1px solid;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+  padding: 8px 34px;
+  cursor: pointer;
+}
+
+.ripple:hover {
+  background: #ff3737 radial-gradient(circle, transparent 1%, #f17575 1%)
+    center/15000%;
+}
