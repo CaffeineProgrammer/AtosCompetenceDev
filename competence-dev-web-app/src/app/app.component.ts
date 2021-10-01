@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'AMS Competence Web App';
-  sideBarOpen = true;
+  sideBarOpen = false;
 
   ngOnInit() {}
 
