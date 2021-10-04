@@ -7,13 +7,24 @@ mat-toolbar {
 }
 
 ul li {
+  display: flex;
   list-style: none;
 }
 
-button {
+.profile-button {
   background: transparent;
   border: 0;
   outline: none;
+}
+
+.button-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__profile-name {
+    margin-left: 10px;
+  }
 }
 
 .user {
