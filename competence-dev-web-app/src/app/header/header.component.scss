@@ -23,6 +23,7 @@ ul li {
   align-items: center;
 
   &__profile-name {
+    font-family: "Raleway";
     margin-left: 10px;
   }
 }
@@ -40,6 +41,11 @@ ul li {
     font-size: 16px;
     height: 18px;
   }
+}
+
+.logout-text {
+  display: inline;
+  font-family: "Raleway";
 }
 
 ::ng-deep .mat-menu-content {
