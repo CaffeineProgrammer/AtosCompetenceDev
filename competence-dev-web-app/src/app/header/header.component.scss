@@ -1,9 +1,9 @@
 mat-toolbar {
+  background: #000;
+  border-bottom: 1px solid #2a272a;
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #000;
-  border-bottom: 1px solid #2a272a;
 }
 
 ul li {
@@ -11,9 +11,9 @@ ul li {
 }
 
 button {
+  background: transparent;
   border: 0;
   outline: none;
-  background: transparent;
 }
 
 .user {
@@ -21,13 +21,13 @@ button {
 
   &__image {
     border-radius: 50%;
-    width: 50px;
     height: 50px;
+    width: 50px;
   }
 
   &__icon {
-    height: 18px;
     font-size: 16px;
+    height: 18px;
   }
 }
 
