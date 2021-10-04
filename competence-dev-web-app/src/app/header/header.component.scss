@@ -1,38 +1,36 @@
-mat-toolbar{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: #000;
-    border-bottom: 1px solid #2A272A;
-}
- 
-ul li {
-    list-style: none;
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #000;
+  border-bottom: 1px solid #2a272a;
 }
 
+ul li {
+  list-style: none;
+}
 
 button {
-    border: 0;
-    outline: none;
-    background: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
 }
 
 .user {
-    font-size: 14px;
+  font-size: 14px;
 
-}
-
-.user-image {
+  &__image {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-}
+  }
 
-.user-image-icon {
+  &__icon {
     height: 18px;
     font-size: 16px;
+  }
 }
 
 ::ng-deep .mat-menu-content {
-    width: 160px;
+  width: 160px;
 }
