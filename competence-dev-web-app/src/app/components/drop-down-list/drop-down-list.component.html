@@ -1,1 +1,47 @@
-<p>drop-down-list works!</p>
+<div [className]="'drop-down-list-container'">
+  <details [className]="'custom-select'">
+    <summary [className]="'radios'">
+      <input
+        type="radio"
+        name="item"
+        id="default"
+        title="Select a competence"
+        checked
+      />
+      <input type="radio" name="item" id="item1" title="Java" />
+      <input type="radio" name="item" id="item2" title=".NET" />
+      <input type="radio" name="item" id="item3" title="Testing" />
+      <input type="radio" name="item" id="item4" title="Low Coding" />
+      <input type="radio" name="item" id="item5" title="Business Analyse" />
+      <input type="radio" name="item" id="item6" title="Oracle" />
+      <input type="radio" name="item" id="item7" title="Cloud" />
+      <input type="radio" name="item" id="item8" title="Agile" />
+    </summary>
+    <ul class="list">
+      <li>
+        <label for="item1">Java</label>
+      </li>
+      <li>
+        <label for="item2">.NET</label>
+      </li>
+      <li>
+        <label for="item3">Testing</label>
+      </li>
+      <li>
+        <label for="item4">Low Coding</label>
+      </li>
+      <li>
+        <label for="item5">Business Analyse</label>
+      </li>
+      <li>
+        <label for="item3">Oracle</label>
+      </li>
+      <li>
+        <label for="item4">Cloud</label>
+      </li>
+      <li>
+        <label for="item5">Agile</label>
+      </li>
+    </ul>
+  </details>
+</div>
