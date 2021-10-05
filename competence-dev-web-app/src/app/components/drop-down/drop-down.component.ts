@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-interface Competence {
+interface Unit {
+  id: string;
   value: string;
   viewValue: string;
 }
@@ -15,14 +16,14 @@ export class DropDownComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  competences: Competence[] = [
-    { value: 'java', viewValue: 'Java' },
-    { value: '.net', viewValue: '.NET' },
-    { value: 'testing', viewValue: 'Testing' },
-    { value: 'low coding', viewValue: 'Low Coding' },
-    { value: 'business analyse', viewValue: 'Business Analyse' },
-    { value: 'oracle', viewValue: 'Oracle' },
-    { value: 'cloud', viewValue: 'Cloud' },
-    { value: 'agile', viewValue: 'Agile' },
+  units: Unit[] = [
+    { id: 'item1', value: 'java', viewValue: 'Java' },
+    { id: 'item2', value: '.net', viewValue: '.NET' },
+    { id: 'item3', value: 'testing', viewValue: 'Testing' },
+    { id: 'item4', value: 'low coding', viewValue: 'Low Coding' },
+    { id: 'item5', value: 'business analyse', viewValue: 'Business Analyse' },
+    { id: 'item6', value: 'oracle', viewValue: 'Oracle' },
+    { id: 'item7', value: 'cloud', viewValue: 'Cloud' },
+    { id: 'item8', value: 'agile', viewValue: 'Agile' },
   ];
 }

@@ -18,29 +18,8 @@
       <input type="radio" name="item" id="item8" title="Agile" />
     </summary>
     <ul class="list">
-      <li>
-        <label for="item1">Java</label>
-      </li>
-      <li>
-        <label for="item2">.NET</label>
-      </li>
-      <li>
-        <label for="item3">Testing</label>
-      </li>
-      <li>
-        <label for="item4">Low Coding</label>
-      </li>
-      <li>
-        <label for="item5">Business Analyse</label>
-      </li>
-      <li>
-        <label for="item6">Oracle</label>
-      </li>
-      <li>
-        <label for="item7">Cloud</label>
-      </li>
-      <li>
-        <label for="item8">Agile</label>
+      <li *ngFor="let unit of units">
+        <label for="{{ unit.id }}">{{ unit.viewValue }}</label>
       </li>
     </ul>
   </details>
