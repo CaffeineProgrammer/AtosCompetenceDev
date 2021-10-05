@@ -13,7 +13,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
 import { CompetenceComponent } from './components/competence/competence.component';
-import { DropDownListComponent } from './components/drop-down-list/drop-down-list.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -28,7 +27,6 @@ import { MatMenuModule } from '@angular/material/menu';
     AppComponent,
     HomeComponent,
     CompetenceComponent,
-    DropDownListComponent,
     HeaderComponent,
     SidenavComponent,
     DashboardComponent,
