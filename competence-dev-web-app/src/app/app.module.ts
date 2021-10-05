@@ -21,6 +21,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
+import { DropDownComponent } from './components/drop-down/drop-down.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { MatMenuModule } from '@angular/material/menu';
     HeaderComponent,
     SidenavComponent,
     DashboardComponent,
+    DropDownComponent,
   ],
   imports: [
     BrowserModule,
