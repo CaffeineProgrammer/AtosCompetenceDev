@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,16 +14,28 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/home/home.component';
 import { CompetenceComponent } from './components/competence/competence.component';
 import { DropDownListComponent } from './components/drop-down-list/drop-down-list.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { HeaderComponent } from './header/header.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CompetenceComponent,
-    DropDownListComponent
+    DropDownListComponent,
+    HeaderComponent,
+    SidenavComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatTabsModule,
     MatFormFieldModule,
@@ -30,8 +43,13 @@ import { DropDownListComponent } from './components/drop-down-list/drop-down-lis
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatListModule,
+    MatDividerModule,
+    MatMenuModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

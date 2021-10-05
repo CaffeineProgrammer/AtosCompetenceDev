@@ -1,0 +1,30 @@
+<mat-toolbar>
+  <mat-toolbar-row class="justify-content-between">
+    <button mat-icon-button (click)="toggleSidebar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="row mr-2 ml-auto">
+      <ul>
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu" class="profile-button">
+            <div class="button-content-container">
+              <img
+                src="https://www.w3schools.com/howto/img_avatar.png"
+                alt=""
+                class="user__image mr-1 p-2"
+              />
+              <div class="button-content-container__profile-name">Username</div>
+              <mat-icon class="user__icon ml-1">keyboard_arrow_down</mat-icon>
+            </div>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              <div class="logout-text">Logout</div>
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

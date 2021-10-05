@@ -1,5 +1,13 @@
-<router-outlet></router-outlet>
-<div>
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <app-sidenav>/</app-sidenav>
+  </mat-drawer>
+  <mat-drawer-container>
+    <app-header (toggleSidebarForMe)="sideBarToggler()"></app-header>
+    <router-outlet></router-outlet>
+  </mat-drawer-container>
+</mat-drawer-container>
+<!-- <div>
   <mat-toolbar>
     <button
       mat-icon-button
@@ -30,3 +38,4 @@
 <div style="margin: 20px">
   <button mat-raised-button color="primary">Visit</button>
 </div>
+ -->
