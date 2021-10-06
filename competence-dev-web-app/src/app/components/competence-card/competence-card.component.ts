@@ -11,7 +11,8 @@ export class CompetenceCardComponent implements OnInit {
     { title: 'Cloud computing', presenter: 'Frits', content: 'test' },
     { title: 'Cloud startup', presenter: 'Frits', content: 'test' },
     { title: 'Cloud', presenter: 'Mark', content: 'test' },
-    { title: 'Cloud computing', presenter: 'Saph', content: 'test' },
+    { title: 'Cloud', presenter: 'Mark', content: 'test' },
+    { title: 'Cloud', presenter: 'Mark', content: 'test' },
   ];
 
   constructor() {}
