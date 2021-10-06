@@ -8,18 +8,11 @@
         title="Select a competence"
         checked
       />
-      <input type="radio" name="item" id="item1" title="Java" />
-      <input type="radio" name="item" id="item2" title=".NET" />
-      <input type="radio" name="item" id="item3" title="Testing" />
-      <input type="radio" name="item" id="item4" title="Low Coding" />
-      <input type="radio" name="item" id="item5" title="Business Analyse" />
-      <input type="radio" name="item" id="item6" title="Oracle" />
-      <input type="radio" name="item" id="item7" title="Cloud" />
-      <input type="radio" name="item" id="item8" title="Agile" />
+      <input *ngFor="let unit of units" type="radio" name="item" id="{{ unit.id }}" title="{{ unit.unitName }}" />
     </summary>
     <ul class="list">
       <li *ngFor="let unit of units">
-        <label for="{{ unit.id }}">{{ unit.viewValue }}</label>
+        <label for="{{ unit.id }}">{{ unit.unitName }}</label>
       </li>
     </ul>
   </details>
