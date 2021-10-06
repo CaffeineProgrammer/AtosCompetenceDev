@@ -61,6 +61,19 @@
   color: #fff;
   margin-top: 20px;
   padding: 8px 34px;
+  transition: background 0.8s;
+  background-position: center;
+}
+
+.competence-card-button:hover {
+  background: rgb(255, 105, 105)
+    radial-gradient(circle, transparent 1%, rgb(255, 105, 105) 1%) center/15000%;
+}
+
+.competence-card-button:active {
+  background-color: rgb(252, 126, 126);
+  background-size: 100%;
+  transition: background 0s;
 }
 
 h2 {
