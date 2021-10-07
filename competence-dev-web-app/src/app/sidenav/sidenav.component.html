@@ -6,12 +6,17 @@
     />
   </div>
   <mat-divider></mat-divider>
-  <h2 matSubheader class="mt-2">Applications</h2>
+  <!-- <h2 matSubheader class="mt-2">Applications</h2> -->
   <a mat-list-item routerLink="/home" routerLinkActive="list-item-active">
-    <mat-icon>home</mat-icon> Home
+    <mat-icon>home</mat-icon>
+    <div class="mat-list-item__category">Home</div>
   </a>
   <a mat-list-item routerLink="/dashboard" routerLinkActive="list-item-active">
-    <mat-icon>dashboard</mat-icon> Competences
+    <mat-icon>dashboard</mat-icon>
+    <div class="mat-list-item__category">Competences</div>
   </a>
-  <a mat-list-item> <mat-icon>edit</mat-icon> Link 3 </a>
+  <a mat-list-item>
+    <mat-icon>edit</mat-icon>
+    <div class="mat-list-item__category">Link 3</div>
+  </a>
 </mat-nav-list>

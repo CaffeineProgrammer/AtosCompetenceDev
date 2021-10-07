@@ -1,0 +1,53 @@
+mat-toolbar {
+  background: #000;
+  border-bottom: 1px solid #2a272a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+ul li {
+  display: flex;
+  list-style: none;
+}
+
+.profile-button {
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+
+.button-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__profile-name {
+    font-family: "Raleway";
+    margin-left: 10px;
+  }
+}
+
+.user {
+  font-size: 14px;
+
+  &__image {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+
+  &__icon {
+    font-size: 16px;
+    height: 18px;
+  }
+}
+
+.logout-text {
+  display: inline;
+  font-family: "Raleway";
+}
+
+::ng-deep .mat-menu-content {
+  width: 160px;
+}
