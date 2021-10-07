@@ -11,6 +11,14 @@
   grid-template-rows: 1fr 1fr;
   gap: 0 34px;
   grid-auto-flow: row;
+
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0 34px;
+    grid-auto-flow: row;
+  }
 }
 
 .competence-card-container {
