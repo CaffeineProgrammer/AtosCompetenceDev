@@ -10,6 +10,14 @@
   &__title h1 {
     font-family: "Raleway";
   }
+
+  @media (max-width: 1024px) {
+    margin: 50px 100px 0 100px;
+  }
+
+  @media (max-width: 375px) {
+    margin: 25px 50px 0 50px;
+  }
 }
 
 h1 {
