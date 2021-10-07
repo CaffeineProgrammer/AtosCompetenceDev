@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-competence-card',
   templateUrl: './competence-card.component.html',
-  styleUrls: ['./competence-card.component.css'],
+  styleUrls: ['./competence-card.component.scss'],
 })
 export class CompetenceCardComponent implements OnInit {
   competences: Competence = [
