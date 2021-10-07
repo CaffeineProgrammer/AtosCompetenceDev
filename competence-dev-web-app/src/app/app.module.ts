@@ -20,6 +20,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
+import { UnitCardComponent } from './unit-card/unit-card.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -28,7 +31,8 @@ import { MatMenuModule } from '@angular/material/menu';
     HomeComponent,
     HeaderComponent,
     SidenavComponent,
-    DashboardComponent
+    DashboardComponent,
+    UnitCardComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
