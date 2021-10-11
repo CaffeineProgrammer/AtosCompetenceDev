@@ -64,6 +64,7 @@
 
   @media (max-width: 1024px){
     height: 80px;
+    -webkit-line-clamp: 3;
   }
 }
 
