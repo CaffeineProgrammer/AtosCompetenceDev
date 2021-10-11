@@ -19,6 +19,14 @@
     gap: 30px 34px;
     grid-auto-flow: row;
   }
+
+  @media (max-width: 375px) {
+    margin-top: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 0;
+    grid-auto-flow: row;
+  }
 }
 
 .content-container:last-child {
@@ -65,6 +73,11 @@
   @media (max-width: 1024px){
     height: 80px;
     -webkit-line-clamp: 3;
+  }
+
+  @media (max-width: 375px){
+    height: 60px;
+    -webkit-line-clamp: 2;
   }
 }
 
