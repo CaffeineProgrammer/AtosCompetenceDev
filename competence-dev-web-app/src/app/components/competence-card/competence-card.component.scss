@@ -9,32 +9,40 @@
   margin-top: 50px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0 34px;
+  gap: 30px 34px;
   grid-auto-flow: row;
 
   @media (max-width: 1024px) {
     margin-top: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0 34px;
+    gap: 30px 34px;
     grid-auto-flow: row;
   }
+}
+
+.content-container:last-child {
+  margin-bottom: 30px;
 }
 
 .competence-card-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 350px;
-  height: 320px;
+  width: 100%;
+  height: 100%;
   padding: 16px;
-  margin-bottom: 30px;
   border-radius: 5px;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(248, 80, 80, 1) 100%
   );
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .competence-card-title {
@@ -53,6 +61,10 @@
   overflow: hidden;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
+
+  @media (max-width: 1024px){
+    height: 80px;
+  }
 }
 
 .competence-card-button-container {
