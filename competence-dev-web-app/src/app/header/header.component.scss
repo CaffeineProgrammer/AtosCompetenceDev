@@ -6,6 +6,12 @@ mat-toolbar {
   z-index: 100;
 }
 
+mat-toolbar-row {
+  @media (max-width: 375px) {
+    height: 64px;
+  }
+}
+
 ul li {
   display: flex;
   list-style: none;
