@@ -20,7 +20,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
-import { InfoComponent } from './components/info/info.component';
+import { InfopageComponent } from './components/info/infopage.component';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { InfoComponent } from './components/info/info.component';
     HeaderComponent,
     SidenavComponent,
     DashboardComponent,
-    InfoComponent
+    InfopageComponent
   ],
   imports: [
     BrowserModule,
