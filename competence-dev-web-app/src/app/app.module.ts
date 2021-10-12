@@ -21,6 +21,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { InfopageComponent } from './components/infopage/infopage.component';
+import { InfoComponent } from './components/info/info.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { InfopageComponent } from './components/infopage/infopage.component';
     SidenavComponent,
     DashboardComponent,
     InfopageComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
