@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,8 +20,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
-import { InfopageComponent } from './components/info/infopage.component';
-
+import { InfopageComponent } from './components/infopage/infopage.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,7 @@ import { InfopageComponent } from './components/info/infopage.component';
     HeaderComponent,
     SidenavComponent,
     DashboardComponent,
-    InfopageComponent
+    InfopageComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,9 +45,9 @@ import { InfopageComponent } from './components/info/infopage.component';
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
