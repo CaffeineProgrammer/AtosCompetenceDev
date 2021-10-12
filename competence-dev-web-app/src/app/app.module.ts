@@ -20,7 +20,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
-import { InfoComponent } from './info/info.component';
+import { InfoComponent } from './components/info/info.component';
 
 
 @NgModule({
