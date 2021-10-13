@@ -1,5 +1,13 @@
-.information-container{
-    &__description {
-        line-height: 2;
-    }
+.information-container {
+  &__description {
+    line-height: 2;
+  }
+
+  h2 {
+    font-family: "Raleway";
+  }
+
+  p {
+    font-family: "Raleway";
+  }
 }
