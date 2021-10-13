@@ -1,4 +1,12 @@
 .information-container {
+  &__title h2 {
+    font-weight: bold;
+  }
+
+  &__presenter p {
+    font-style: italic;
+  }
+
   &__description {
     line-height: 2;
   }
