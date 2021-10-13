@@ -80,3 +80,11 @@
     box-shadow: 4px 3px 11px 6px #000;
     transform: translateY(-3px);
 }
+
+.mat-elevation-z4 {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(248, 80, 80, 1) 100%
+      );
+}
