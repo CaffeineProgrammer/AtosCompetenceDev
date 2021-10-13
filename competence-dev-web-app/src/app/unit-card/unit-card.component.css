@@ -1,16 +1,18 @@
-.unit-card-container {
+.content-container {
   display: grid;
   margin-top: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 30px 34px;
+  grid-auto-flow: row;
 }
 
-.unit {
-  overflow: hidden;
+.unit-card-container {
+  /* overflow: hidden; */
   border-radius: 5px;
-  background-color: #202020;
-  box-shadow: 4px 3px 8px 0px #000;
-  transition-duration: 0.3s;
+  /* background-color: #202020; */
+  /* box-shadow: 4px 3px 8px 0px #000; */
+  /* transition-duration: 0.3s; */
   cursor: pointer;
 }
 
