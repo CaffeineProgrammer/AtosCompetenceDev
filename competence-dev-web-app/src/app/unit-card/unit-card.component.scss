@@ -24,11 +24,38 @@
   height: 100%;
   padding: 16px;
   border-radius: 5px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(248, 80, 80, 1) 100%
-  );
+
+  &__blue {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 148, 255, 1) 100%
+    );
+  }
+
+  &__green {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 163, 155, 1) 100%
+    );
+  }
+
+  &__purple {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(163, 117, 255, 1) 100%
+    );
+  }
+
+  &__red {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(248, 80, 80, 1) 100%
+    );
+  }
 
   &__header {
     width: inherit;
@@ -48,27 +75,28 @@
     margin-bottom: 10px;
   }
 
-  &__button {
+  &__button-container {
     align-self: flex-start;
   }
 
-  &__button button {
-    background: rgba(248, 80, 80, 1);
+  &__button-container button {
+    background: transparent;
     border: 1px solid;
     border-radius: 5px;
     color: #fff;
     padding: 8px 34px;
     transition: background 0.8s;
     background-position: center;
+
   }
 
-  &__button button:hover {
+  &__button-container button:hover {
     background: rgb(255, 105, 105)
       radial-gradient(circle, transparent 1%, rgb(255, 105, 105) 1%)
       center/15000%;
   }
 
-  &__button button:active {
+  &__button-container button:active {
     background-color: rgb(252, 126, 126);
     background-size: 100%;
     transition: background 0s;

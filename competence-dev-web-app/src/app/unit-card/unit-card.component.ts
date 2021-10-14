@@ -7,14 +7,54 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UnitCardComponent implements OnInit {
   units: Unit = [
-    { title: 'Java', content: 'test', colorId: 1 },
-    { title: '.NET', content: 'test', colorId: 1 },
-    { title: 'Testing', content: 'test', colorId: 2 },
-    { title: 'Low Coding', content: 'test', colorId: 2 },
-    { title: 'Business Analyse', content: 'test', colorId: 3 },
-    { title: 'Oracle', content: 'test', colorId: 3 },
-    { title: 'Cloud', content: 'test', colorId: 4 },
-    { title: 'Agile', content: 'test', colorId: 4 },
+    {
+      title: 'Java',
+      content: 'test',
+      class: 'unit-card-container__blue',
+      button: 'button-container__blue',
+    },
+    {
+      title: '.NET',
+      content: 'test',
+      class: 'unit-card-container__blue',
+      button: 'button-container__blue',
+    },
+    {
+      title: 'Testing',
+      content: 'test',
+      class: 'unit-card-container__green',
+      button: 'button-container__green',
+    },
+    {
+      title: 'Low Coding',
+      content: 'test',
+      class: 'unit-card-container__green',
+      button: 'button-container__green',
+    },
+    {
+      title: 'Business Analyse',
+      content: 'test',
+      class: 'unit-card-container__purple',
+      button: 'button-container__purple',
+    },
+    {
+      title: 'Oracle',
+      content: 'test',
+      class: 'unit-card-container__purple',
+      button: 'button-container__purple',
+    },
+    {
+      title: 'Cloud',
+      content: 'test',
+      class: 'unit-card-container__red',
+      button: 'button-container__red',
+    },
+    {
+      title: 'Agile',
+      content: 'test',
+      class: 'unit-card-container__red',
+      button: 'button-container__red',
+    },
   ];
 
   constructor() {}
@@ -22,4 +62,9 @@ export class UnitCardComponent implements OnInit {
   ngOnInit(): void {}
 }
 
-type Unit = Array<{ title: string; content: string; colorId: number }>;
+type Unit = Array<{
+  title: string;
+  content: string;
+  class: string;
+  button: string;
+}>;
