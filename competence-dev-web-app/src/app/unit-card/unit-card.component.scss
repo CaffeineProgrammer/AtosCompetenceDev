@@ -7,13 +7,8 @@
   grid-auto-flow: row;
 }
 
-.unit-card-container {
-  /* overflow: hidden; */
-  border-radius: 5px;
-  /* background-color: #202020; */
-  /* box-shadow: 4px 3px 8px 0px #000; */
-  /* transition-duration: 0.3s; */
-  cursor: pointer;
+.content-container:last-child {
+  margin-bottom: 30px;
 }
 
 .unit:hover {
@@ -21,12 +16,64 @@
   transform: translateY(-3px);
 }
 
-.mat-elevation-z4 {
+.unit-card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  border-radius: 5px;
+  /* cursor: pointer; */
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(248, 80, 80, 1) 100%
   );
+
+  &__header {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__header h2 {
+    margin: 0;
+  }
+
+  &__info {
+    align-self: flex-start;
+    line-height: 2;
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    align-self: flex-start;
+  }
+
+  &__button button {
+    background: rgba(248, 80, 80, 1);
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 34px;
+    transition: background 0.8s;
+    background-position: center;
+  }
+
+  &__button button:hover {
+    background: rgb(255, 105, 105)
+      radial-gradient(circle, transparent 1%, rgb(255, 105, 105) 1%)
+      center/15000%;
+  }
+
+  &__button button:active {
+    background-color: rgb(252, 126, 126);
+    background-size: 100%;
+    transition: background 0s;
+  }
 }
 
 /* .units {
