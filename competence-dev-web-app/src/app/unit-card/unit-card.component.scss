@@ -67,6 +67,7 @@
 
   &__header h2 {
     margin: 0;
+    font-family: "Raleway";
   }
 
   &__info {
@@ -75,8 +76,16 @@
     margin-bottom: 10px;
   }
 
+  &__info p {
+    font-family: "Raleway";
+  }
+
   &__button {
     align-self: flex-start;
+
+    &__label {
+      font-family: "Raleway";
+    }
   }
 
   &__button button {
