@@ -1,6 +1,6 @@
 <div class="content-container">
   <ng-container *ngFor="let unit of units">
-    <div class="unit-card-container {{ unit.class }}" >
+    <div class="unit-card-container {{ unit.class }}">
       <div class="unit-card-container__header">
         <h2>{{ unit.title }}</h2>
         <button mat-button>
@@ -21,8 +21,8 @@
         </p>
       </div>
 
-      <div class="unit-card-container__button-container">
-        <button class="button">Visit</button>
+      <div class="unit-card-container__button">
+        <button mat-button>Visit</button>
       </div>
     </div>
   </ng-container>

@@ -11,49 +11,41 @@ export class UnitCardComponent implements OnInit {
       title: 'Java',
       content: 'test',
       class: 'unit-card-container__blue',
-      button: 'button-container__blue',
     },
     {
       title: '.NET',
       content: 'test',
       class: 'unit-card-container__blue',
-      button: 'button-container__blue',
     },
     {
       title: 'Testing',
       content: 'test',
       class: 'unit-card-container__green',
-      button: 'button-container__green',
     },
     {
       title: 'Low Coding',
       content: 'test',
       class: 'unit-card-container__green',
-      button: 'button-container__green',
     },
     {
       title: 'Business Analyse',
       content: 'test',
       class: 'unit-card-container__purple',
-      button: 'button-container__purple',
     },
     {
       title: 'Oracle',
       content: 'test',
       class: 'unit-card-container__purple',
-      button: 'button-container__purple',
     },
     {
       title: 'Cloud',
       content: 'test',
       class: 'unit-card-container__red',
-      button: 'button-container__red',
     },
     {
       title: 'Agile',
       content: 'test',
       class: 'unit-card-container__red',
-      button: 'button-container__red',
     },
   ];
 
@@ -66,5 +58,4 @@ type Unit = Array<{
   title: string;
   content: string;
   class: string;
-  button: string;
 }>;

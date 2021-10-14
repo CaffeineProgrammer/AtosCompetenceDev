@@ -75,30 +75,15 @@
     margin-bottom: 10px;
   }
 
-  &__button-container {
+  &__button {
     align-self: flex-start;
   }
 
-  &__button-container button {
-    background: transparent;
+  &__button button {
+    align-self: flex-start;
+    padding: 16px 34px;
     border: 1px solid;
     border-radius: 5px;
-    color: #fff;
-    padding: 8px 34px;
-    transition: background 0.8s;
-    background-position: center;
-
-  }
-
-  &__button-container button:hover {
-    background: rgb(255, 105, 105)
-      radial-gradient(circle, transparent 1%, rgb(255, 105, 105) 1%)
-      center/15000%;
-  }
-
-  &__button-container button:active {
-    background-color: rgb(252, 126, 126);
-    background-size: 100%;
-    transition: background 0s;
+    line-height: 0;
   }
 }
