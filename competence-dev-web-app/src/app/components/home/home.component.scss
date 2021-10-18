@@ -13,6 +13,14 @@
     font-size: 34px;
     font-weight: bold;
   }
+
+  @media (max-width: 1024px) {
+    margin: 50px 75px 0 75px;
+  }
+
+  @media (max-width: 375px) {
+    margin: 25px 30px 0 30px;
+  }
 }
 
 /* 
@@ -47,4 +55,3 @@
   transform: translate(-50%, -50%);
 }
  */
-
