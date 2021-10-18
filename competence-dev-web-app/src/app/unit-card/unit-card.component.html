@@ -3,8 +3,10 @@
     <div class="unit-card-container {{ unit.class }}">
       <div class="unit-card-container__header">
         <h2>{{ unit.title }}</h2>
-        <button mat-button>
-          <mat-icon>star_border</mat-icon>
+        <button mat-button (click)="toggleFavoriteButton(unit.title)">
+          <!-- <mat-icon>star_border</mat-icon> -->
+          <mat-icon *ngIf="unit.favorite === false">favorite_border</mat-icon>
+          <mat-icon *ngIf="unit.favorite === true">favorite</mat-icon>
           Favourite
         </button>
       </div>
