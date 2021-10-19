@@ -37,7 +37,7 @@
   padding: 16px;
   border-radius: 5px;
 
-  &__blue {
+  &--blue {
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 0%,
@@ -45,7 +45,7 @@
     );
   }
 
-  &__green {
+  &--green {
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 0%,
@@ -53,7 +53,7 @@
     );
   }
 
-  &__purple {
+  &--purple {
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 0%,
@@ -61,7 +61,7 @@
     );
   }
 
-  &__red {
+  &--red {
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 0%,
