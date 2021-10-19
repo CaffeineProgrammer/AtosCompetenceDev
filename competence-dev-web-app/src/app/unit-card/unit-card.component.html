@@ -6,7 +6,7 @@
         <button mat-button (click)="toggleFavoriteButton(unit.title)">
           <!-- <mat-icon>star_border</mat-icon> -->
           <mat-icon *ngIf="unit.favorite === false">favorite_border</mat-icon>
-          <mat-icon *ngIf="unit.favorite === true">favorite</mat-icon>
+          <mat-icon class="fav-button--active"*ngIf="unit.favorite === true">favorite</mat-icon>
           Favourite
         </button>
       </div>
