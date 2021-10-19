@@ -1,0 +1,21 @@
+.information-container {
+  &__title h2 {
+    font-weight: bold;
+  }
+
+  &__presenter p {
+    font-style: italic;
+  }
+
+  &__description {
+    line-height: 2;
+  }
+
+  h2 {
+    font-family: "Raleway";
+  }
+
+  p {
+    font-family: "Raleway";
+  }
+}
