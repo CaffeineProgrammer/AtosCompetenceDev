@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-unit-card',
@@ -6,9 +6,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./unit-card.component.scss'],
 })
 export class UnitCardComponent implements OnInit {
-  // @Input() selected: boolean;
-  // @Output() selectedChange = new EventEmitter<boolean>();
-
   units: Unit = [
     {
       title: 'Java',
@@ -60,9 +57,7 @@ export class UnitCardComponent implements OnInit {
     },
   ];
 
-  constructor() {
-    // this.selected = false;
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 
@@ -76,13 +71,6 @@ export class UnitCardComponent implements OnInit {
         }
       }
     });
-
-    console.log(this.units.find((e) => e.title === name));
-
-    // console.log(name);
-
-    //   this.selected = !this.selected;
-    //   this.selectedChange.emit(this.selected);
   }
 }
 
