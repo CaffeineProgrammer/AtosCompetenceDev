@@ -61,9 +61,9 @@ export class UnitCardComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  public toggleFavoriteButton(name: string) {
+  public toggleFavoriteButton(title: string) {
     this.units.find((e, i) => {
-      if (e.title === name) {
+      if (e.title === title) {
         if (this.units[i].favorite === false) {
           this.units[i].favorite = true;
         } else {
