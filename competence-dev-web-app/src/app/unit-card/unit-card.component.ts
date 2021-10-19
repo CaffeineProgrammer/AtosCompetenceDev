@@ -11,49 +11,49 @@ export class UnitCardComponent implements OnInit {
       title: 'Java',
       content: 'test',
       class: 'unit-card-container--blue',
-      favorite: false,
+      isFavorite: false,
     },
     {
       title: '.NET',
       content: 'test',
       class: 'unit-card-container--blue',
-      favorite: false,
+      isFavorite: false,
     },
     {
       title: 'Testing',
       content: 'test',
       class: 'unit-card-container--green',
-      favorite: false,
+      isFavorite: false,
     },
     {
       title: 'Low Coding',
       content: 'test',
       class: 'unit-card-container--green',
-      favorite: false,
+      isFavorite: false,
     },
     {
       title: 'Business Analyse',
       content: 'test',
       class: 'unit-card-container--purple',
-      favorite: false,
+      isFavorite: false,
     },
     {
       title: 'Oracle',
       content: 'test',
       class: 'unit-card-container--purple',
-      favorite: false,
+      isFavorite: false,
     },
     {
       title: 'Cloud',
       content: 'test',
       class: 'unit-card-container--red',
-      favorite: false,
+      isFavorite: false,
     },
     {
       title: 'Agile',
       content: 'test',
       class: 'unit-card-container--red',
-      favorite: false,
+      isFavorite: false,
     },
   ];
 
@@ -64,10 +64,10 @@ export class UnitCardComponent implements OnInit {
   public toggleFavoriteButton(title: string) {
     this.units.find((e, i) => {
       if (e.title === title) {
-        if (this.units[i].favorite === false) {
-          this.units[i].favorite = true;
+        if (this.units[i].isFavorite === false) {
+          this.units[i].isFavorite = true;
         } else {
-          this.units[i].favorite = false;
+          this.units[i].isFavorite = false;
         }
       }
     });
@@ -78,5 +78,5 @@ type Unit = Array<{
   title: string;
   content: string;
   class: string;
-  favorite: boolean;
+  isFavorite: boolean;
 }>;
