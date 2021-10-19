@@ -1,32 +1,64 @@
 <div class="content-container">
   <ng-container *ngFor="let unit of units">
-    <div class="unit-card-container {{ unit.class }}">
-      <div class="unit-card-container__header">
-        <h2>{{ unit.title }}</h2>
-        <button mat-button (click)="toggleFavoriteButton(unit.title)">
-          <!-- <mat-icon>star_border</mat-icon> -->
-          <mat-icon *ngIf="unit.favorite === false">favorite_border</mat-icon>
-          <mat-icon class="fav-button--active"*ngIf="unit.favorite === true">favorite</mat-icon>
-          Favourite
-        </button>
-      </div>
+    <div *ngIf="unit.favorite === true">
+      <div class="unit-card-container {{ unit.class }}">
+        <div class="unit-card-container__header">
+          <h2>{{ unit.title }}</h2>
+          <button mat-button (click)="toggleFavoriteButton(unit.title)">
+            <mat-icon class="unit-card-container__fav-button--active"
+              >favorite</mat-icon
+            >
+          </button>
+        </div>
 
-      <div class="unit-card-container__info">
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
-        </p>
-      </div>
+        <div class="unit-card-container__info">
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>
 
-      <div class="unit-card-container__button">
-        <button mat-button>
-          <span class="unit-card-container__button__label">Visit</span>
-        </button>
+        <div class="unit-card-container__button">
+          <button mat-button>
+            <span class="unit-card-container__button__label">Visit</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngFor="let unit of units">
+    <div *ngIf="unit.favorite === false">
+      <div class="unit-card-container {{ unit.class }}">
+        <div class="unit-card-container__header">
+          <h2>{{ unit.title }}</h2>
+          <button mat-button (click)="toggleFavoriteButton(unit.title)">
+            <mat-icon>favorite_border</mat-icon>
+          </button>
+        </div>
+
+        <div class="unit-card-container__info">
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </div>
+
+        <div class="unit-card-container__button">
+          <button mat-button>
+            <span class="unit-card-container__button__label">Visit</span>
+          </button>
+        </div>
       </div>
     </div>
   </ng-container>
