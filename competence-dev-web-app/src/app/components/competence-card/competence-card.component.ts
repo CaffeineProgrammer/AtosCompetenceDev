@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-competence-card',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./competence-card.component.scss'],
 })
 export class CompetenceCardComponent implements OnInit {
+  @Input() unitCategory: any;
+
   competences: Competence = [
     { title: 'Cloud computing', presenter: 'Frits', content: 'test' },
     { title: 'Cloud startup', presenter: 'Frits', content: 'test' },
