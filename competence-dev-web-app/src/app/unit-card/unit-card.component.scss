@@ -83,6 +83,10 @@
     font-weight: bold;
   }
 
+  &__fav-button--active {
+    color: red;
+  }
+
   &__info {
     display: -webkit-box;
     align-self: flex-start;
@@ -115,9 +119,5 @@
     border: 1px solid;
     border-radius: 5px;
     line-height: 0;
-  }
-
-  .fav-button--active {
-    color: red;
   }
 }
