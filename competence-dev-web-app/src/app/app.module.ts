@@ -11,6 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { CompetencesModule } from './competences/competences.module';
 import { HomeComponent } from './home/home.component';
 import { CompetencePageComponent } from './competences/competence-page/competence-page.component';
 import { CompetenceCardComponent } from './competences/competence-card/competence-card.component';
@@ -28,7 +29,6 @@ import { MatCardModule } from '@angular/material/card';
 import { DropDownComponent } from './drop-down/drop-down.component';
 import { InfopageComponent } from './infopage/infopage.component';
 import { InfoComponent } from './info/info.component';
-import { CompetencesModule } from './competences/competences.module';
 
 @NgModule({
   declarations: [
