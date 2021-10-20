@@ -12,7 +12,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
-import { CompetenceComponent } from './competence/competence.component';
+import { CompetenceComponent } from './competence-page/competence.component';
 import { CompetenceCardComponent } from './competence-card/competence-card.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
