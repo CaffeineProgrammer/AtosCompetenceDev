@@ -12,7 +12,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
-import { CompetenceComponent } from './competence-page/competence.component';
+import { CompetencePageComponent } from './competence-page/competence-page.component';
 import { CompetenceCardComponent } from './competence-card/competence-card.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -33,7 +33,7 @@ import { InfoComponent } from './info/info.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    CompetenceComponent,
+    CompetencePageComponent,
     CompetenceCardComponent,
     HeaderComponent,
     SidenavComponent,
