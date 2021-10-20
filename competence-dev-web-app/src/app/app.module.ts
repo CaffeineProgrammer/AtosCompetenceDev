@@ -11,9 +11,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { HomeComponent } from './components/home/home.component';
-import { CompetenceComponent } from './components/competence/competence.component';
-import { CompetenceCardComponent } from './components/competence-card/competence-card.component';
+import { HomeComponent } from './home/home.component';
+import { CompetenceComponent } from './competence/competence.component';
+import { CompetenceCardComponent } from './competence-card/competence-card.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -25,9 +25,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { UnitCardComponent } from './unit-card/unit-card.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
-import { DropDownComponent } from './components/drop-down/drop-down.component';
-import { InfopageComponent } from './components/infopage/infopage.component';
-import { InfoComponent } from './components/info/info.component';
+import { DropDownComponent } from './drop-down/drop-down.component';
+import { InfopageComponent } from './infopage/infopage.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
