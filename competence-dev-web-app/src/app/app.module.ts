@@ -5,13 +5,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
-import { CompetencePageComponent } from './competences/competence-page/competence-page.component';
-import { CompetenceCardComponent } from './competences/competence-card/competence-card.component';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UnitCardComponent } from './unit-card/unit-card.component';
-import { DropDownComponent } from './drop-down/drop-down.component';
 import { InfopageComponent } from './infopage/infopage.component';
 import { InfoComponent } from './info/info.component';
 
@@ -35,20 +32,16 @@ import { CompetencesModule } from './competences/competences.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    CompetencePageComponent,
-    CompetenceCardComponent,
     HeaderComponent,
     SidenavComponent,
     DashboardComponent,
     UnitCardComponent,
-    DropDownComponent,
     InfopageComponent,
     InfoComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
     MatTabsModule,
     MatFormFieldModule,
     MatSelectModule,
@@ -63,6 +56,7 @@ import { CompetencesModule } from './competences/competences.module';
     MatCardModule,
     FlexLayoutModule,
     CompetencesModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
