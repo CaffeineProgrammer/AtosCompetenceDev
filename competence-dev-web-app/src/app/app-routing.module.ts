@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { CompetencePageComponent } from './competence-page/competence-page.component';
+import { CompetencePageComponent } from './competences/competence-page/competence-page.component';
 import { InfopageComponent } from './infopage/infopage.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
