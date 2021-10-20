@@ -28,6 +28,7 @@ import { MatCardModule } from '@angular/material/card';
 import { DropDownComponent } from './drop-down/drop-down.component';
 import { InfopageComponent } from './infopage/infopage.component';
 import { InfoComponent } from './info/info.component';
+import { CompetencesModule } from './competences/competences.module';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { InfoComponent } from './info/info.component';
     MatMenuModule,
     MatCardModule,
     FlexLayoutModule,
+    CompetencesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
