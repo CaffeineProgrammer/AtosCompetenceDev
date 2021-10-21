@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { InfopageComponent } from './infopage/infopage.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CompetencePageComponent } from './competence-page/competence-page.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'competence',
+    component: CompetencePageComponent,
+  },
+  {
     path: 'infopage',
     component: InfopageComponent,
   },
@@ -25,7 +30,7 @@ const routes: Routes = [
   {
     path: '**',
     component: HomeComponent,
-  }
+  },
 ];
 
 @NgModule({

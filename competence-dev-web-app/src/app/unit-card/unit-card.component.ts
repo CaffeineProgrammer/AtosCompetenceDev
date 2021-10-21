@@ -59,7 +59,7 @@ export class UnitCardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 
   public toggleFavoriteButton(title: string) {
     this.units.find((e, i) => {
