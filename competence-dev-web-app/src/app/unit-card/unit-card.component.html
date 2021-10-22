@@ -2,16 +2,16 @@
   <ng-container *ngFor="let unit of units">
     <div *ngIf="unit.isFavorite === true">
       <div class="unit-card-container {{ unit.class }}">
-        <div class="unit-card-container__header">
+        <div class="unit-card-header">
           <h2>{{ unit.title }}</h2>
           <button mat-button (click)="toggleFavoriteButton(unit.title)">
-            <mat-icon class="unit-card-container__fav-button--active"
+            <mat-icon class="unit-card-header__fav-button--active"
               >favorite</mat-icon
             >
           </button>
         </div>
 
-        <div class="unit-card-container__info">
+        <div class="unit-card-info">
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -23,7 +23,7 @@
           </p>
         </div>
 
-        <div class="unit-card-container__button">
+        <div class="unit-card-button">
           <button
             mat-button
             [routerLink]="['/competence']"
@@ -31,7 +31,7 @@
             queryParamsHandling="merge"
             routerLinkActive="active"
           >
-            <span class="unit-card-container__button__label">Visit</span>
+            <span class="unit-card-button__label">Visit</span>
           </button>
         </div>
       </div>
@@ -41,14 +41,14 @@
   <ng-container *ngFor="let unit of units">
     <div *ngIf="unit.isFavorite === false">
       <div class="unit-card-container {{ unit.class }}">
-        <div class="unit-card-container__header">
+        <div class="unit-card-header">
           <h2>{{ unit.title }}</h2>
           <button mat-button (click)="toggleFavoriteButton(unit.title)">
             <mat-icon>favorite_border</mat-icon>
           </button>
         </div>
 
-        <div class="unit-card-container__info">
+        <div class="unit-card-info">
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -60,7 +60,7 @@
           </p>
         </div>
 
-        <div class="unit-card-container__button">
+        <div class="unit-card-button">
           <button
             mat-button
             [routerLink]="['/competence']"
@@ -68,7 +68,7 @@
             queryParamsHandling="merge"
             routerLinkActive="active"
           >
-            <span class="unit-card-container__button__label">Visit</span>
+            <span class="unit-card-button__label">Visit</span>
           </button>
         </div>
       </div>

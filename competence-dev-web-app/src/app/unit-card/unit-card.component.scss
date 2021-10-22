@@ -23,7 +23,7 @@
   margin-bottom: 30px;
 }
 
-.unit:hover {
+.unit-card-container:hover {
   box-shadow: 4px 3px 11px 6px #000;
   transform: translateY(-3px);
 }
@@ -68,16 +68,16 @@
       rgba(248, 80, 80, 1) 100%
     );
   }
+}
 
-  &__header {
-    width: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
+.unit-card-header {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
 
-  &__header h2 {
+  h2 {
     margin: 0;
     font-family: "Raleway";
     font-weight: bold;
@@ -86,34 +86,34 @@
   &__fav-button--active {
     color: red;
   }
+}
 
-  &__info {
-    display: -webkit-box;
-    align-self: flex-start;
-    line-height: 2;
-    margin-bottom: 10px;
-    overflow: hidden;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+.unit-card-info {
+  display: -webkit-box;
+  align-self: flex-start;
+  line-height: 2;
+  margin-bottom: 10px;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 
-    @media (max-width: 1024px) {
-      -webkit-line-clamp: 3;
-    }
-  }
-
-  &__info p {
+  p {
     font-family: "Raleway";
   }
 
-  &__button {
-    align-self: flex-start;
+  @media (max-width: 1024px) {
+    -webkit-line-clamp: 3;
+  }
+}
 
-    &__label {
-      font-family: "Raleway";
-    }
+.unit-card-button {
+  align-self: flex-start;
+
+  &__label {
+    font-family: "Raleway";
   }
 
-  &__button button {
+  button {
     align-self: flex-start;
     padding: 16px 34px;
     border: 1px solid;
