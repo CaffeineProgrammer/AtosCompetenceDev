@@ -97,41 +97,31 @@
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 
-  @media (max-width: 1024px){
+  @media (max-width: 1024px) {
     height: 80px;
     -webkit-line-clamp: 3;
   }
 
-  @media (max-width: 375px){
+  @media (max-width: 375px) {
     height: 60px;
     -webkit-line-clamp: 2;
   }
 }
 
-.competence-card-button-container {
-  align-self: flex-start;
-}
-
 .competence-card-button {
-  background: rgba(248, 80, 80, 1);
-  border: 1px solid;
-  border-radius: 5px;
-  color: #fff;
-  margin-top: 20px;
-  padding: 8px 34px;
-  transition: background 0.8s;
-  background-position: center;
-}
+  align-self: flex-start;
 
-.competence-card-button:hover {
-  background: rgb(255, 105, 105)
-    radial-gradient(circle, transparent 1%, rgb(255, 105, 105) 1%) center/15000%;
-}
+  &__label {
+    font-family: "Raleway";
+  }
 
-.competence-card-button:active {
-  background-color: rgb(252, 126, 126);
-  background-size: 100%;
-  transition: background 0s;
+  button {
+    align-self: flex-start;
+    padding: 16px 34px;
+    border: 1px solid;
+    border-radius: 5px;
+    line-height: 0;
+  }
 }
 
 h2 {

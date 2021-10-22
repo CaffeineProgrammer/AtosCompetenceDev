@@ -18,9 +18,10 @@
           culpa qui officia deserunt mollit anim id est laborum."
         </p>
       </div>
-      <div class="competence-card-button-container">
-        <button routerLink="/infopage" class="competence-card-button">
-          Visit
+
+      <div class="competence-card-button">
+        <button mat-button [routerLink]="['/infopage']">
+          <span class="competence-card-button__label">Visit</span>
         </button>
       </div>
     </div>
