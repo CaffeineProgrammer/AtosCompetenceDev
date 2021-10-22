@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Interface } from 'readline';
 
 interface Unit {
   unitName: string;
@@ -38,10 +37,21 @@ export class CompetenceCardComponent implements OnInit {
     },
   ];
 
+  competence: Competence[] = [];
+
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe((params) => {
       let unit = params['unit'];
-      console.log(unit);
+
+      for (let i = 0; i < this.competences.length; i++) {
+        if (this.competences[i].unitName === unit) {
+          this.competences[i].competence.forEach((obj) =>
+            this.competence.push(Object.assign({}, obj))
+          );
+        }
+      }
+
+      console.log(this.competence);
     });
   }
 
