@@ -11,6 +11,7 @@ interface Competence {
   competenceName: string;
   presenter: string;
   content: string;
+  class: string;
 }
 
 @Component({
