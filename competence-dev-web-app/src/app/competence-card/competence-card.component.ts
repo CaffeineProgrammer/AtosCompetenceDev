@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { COMPETENCES } from '../mock-competences';
 
 interface Unit {
   unitName: string;
@@ -18,24 +19,7 @@ interface Competence {
   styleUrls: ['./competence-card.component.scss'],
 })
 export class CompetenceCardComponent implements OnInit {
-  competences: Unit[] = [
-    {
-      unitName: 'Java',
-      competence: [
-        {
-          competenceName: 'Cloud computing',
-          presenter: 'Frits',
-          content: 'test',
-        },
-        {
-          competenceName: 'Cloud startup',
-          presenter: 'Frits',
-          content: 'test',
-        },
-        { competenceName: 'Cloud', presenter: 'Mark', content: 'test' },
-      ],
-    },
-  ];
+  competences: Unit[] = COMPETENCES;
 
   competence: Competence[] = [];
 
