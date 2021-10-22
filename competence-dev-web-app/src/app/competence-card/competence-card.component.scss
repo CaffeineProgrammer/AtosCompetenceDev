@@ -41,11 +41,38 @@
   height: 100%;
   padding: 16px;
   border-radius: 5px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(248, 80, 80, 1) 100%
-  );
+
+  &--blue {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 148, 255, 1) 100%
+    );
+  }
+
+  &--green {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 163, 155, 1) 100%
+    );
+  }
+
+  &--purple {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(163, 117, 255, 1) 100%
+    );
+  }
+
+  &--red {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(248, 80, 80, 1) 100%
+    );
+  }
 
   @media (max-width: 1024px) {
     width: 100%;
