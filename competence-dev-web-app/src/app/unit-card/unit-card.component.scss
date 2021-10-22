@@ -23,11 +23,6 @@
   margin-bottom: 30px;
 }
 
-.unit-card-container:hover {
-  box-shadow: 4px 3px 11px 6px #000;
-  transform: translateY(-3px);
-}
-
 .unit-card-container {
   display: flex;
   align-items: center;
@@ -68,6 +63,11 @@
       rgba(248, 80, 80, 1) 100%
     );
   }
+}
+
+.unit-card-container:hover {
+  box-shadow: 4px 3px 11px 6px #000;
+  transform: translateY(-3px);
 }
 
 .unit-card-header {

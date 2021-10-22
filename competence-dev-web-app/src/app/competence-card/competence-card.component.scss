@@ -80,6 +80,11 @@
   }
 }
 
+.competence-card-container:hover {
+  box-shadow: 4px 3px 11px 6px #000;
+  transform: translateY(-3px);
+}
+
 .competence-card-title {
   align-self: flex-start;
 }
