@@ -1,6 +1,4 @@
-import { Unit } from './unit';
-
-export const UNITS: Unit[] = [
+export const UNITS = [
   {
     title: 'Java',
     content: 'test',

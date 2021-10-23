@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { UNITS } from '../mock-units';
+
+interface Unit {
+  title: string;
+  content: string;
+  class: string;
+  isFavorite: boolean;
+}
 
 @Component({
   selector: 'app-unit-card',
@@ -6,56 +14,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./unit-card.component.scss'],
 })
 export class UnitCardComponent implements OnInit {
-  units: Unit = [
-    {
-      title: 'Java',
-      content: 'test',
-      class: 'unit-card-container--blue',
-      isFavorite: false,
-    },
-    {
-      title: '.NET',
-      content: 'test',
-      class: 'unit-card-container--blue',
-      isFavorite: false,
-    },
-    {
-      title: 'Testing',
-      content: 'test',
-      class: 'unit-card-container--green',
-      isFavorite: false,
-    },
-    {
-      title: 'Low Coding',
-      content: 'test',
-      class: 'unit-card-container--green',
-      isFavorite: false,
-    },
-    {
-      title: 'Business Analyse',
-      content: 'test',
-      class: 'unit-card-container--purple',
-      isFavorite: false,
-    },
-    {
-      title: 'Oracle',
-      content: 'test',
-      class: 'unit-card-container--purple',
-      isFavorite: false,
-    },
-    {
-      title: 'Cloud',
-      content: 'test',
-      class: 'unit-card-container--red',
-      isFavorite: false,
-    },
-    {
-      title: 'Agile',
-      content: 'test',
-      class: 'unit-card-container--red',
-      isFavorite: false,
-    },
-  ];
+  units: Unit[] = UNITS;
 
   constructor() {}
 
@@ -73,10 +32,3 @@ export class UnitCardComponent implements OnInit {
     });
   }
 }
-
-type Unit = Array<{
-  title: string;
-  content: string;
-  class: string;
-  isFavorite: boolean;
-}>;
