@@ -20,7 +20,11 @@
       </div>
 
       <div class="competence-card-button">
-        <button mat-button [routerLink]="['/infopage']">
+        <button
+          mat-button
+          [routerLink]="['/infopage']"
+          [queryParams]="{ competence: c.competenceName }"
+        >
           <span class="competence-card-button__label">Visit</span>
         </button>
       </div>

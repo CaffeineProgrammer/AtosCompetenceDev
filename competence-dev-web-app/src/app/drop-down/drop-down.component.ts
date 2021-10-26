@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { DROP_DOWN_UNITS } from '../mock-drop-down-units';
 
 interface Unit {
   id: string;
   value: string;
   unitName: string;
-  url: string;
 }
 
 @Component({
@@ -14,6 +14,7 @@ interface Unit {
   styleUrls: ['./drop-down.component.scss'],
 })
 export class DropDownComponent implements OnInit {
+  @Input() objectArray: any;
   dropDownSelection: string = '';
 
   constructor(private route: ActivatedRoute) {
@@ -25,55 +26,4 @@ export class DropDownComponent implements OnInit {
   }
 
   ngOnInit(): void {}
-
-  units: Unit[] = [
-    {
-      id: 'unit1',
-      value: 'java',
-      unitName: 'Java',
-      url: 'http://localhost:4200/competence?unit=Java',
-    },
-    {
-      id: 'unit2',
-      value: '.net',
-      unitName: '.NET',
-      url: 'http://localhost:4200/competence?unit=.NET',
-    },
-    {
-      id: 'unit3',
-      value: 'testing',
-      unitName: 'Testing',
-      url: 'http://localhost:4200/competence?unit=Testing',
-    },
-    {
-      id: 'unit4',
-      value: 'low coding',
-      unitName: 'Low Coding',
-      url: 'http://localhost:4200/competence?unit=Low%20Coding',
-    },
-    {
-      id: 'unit5',
-      value: 'business analyse',
-      unitName: 'Business Analyse',
-      url: 'http://localhost:4200/competence?unit=Business%20Analyse',
-    },
-    {
-      id: 'unit6',
-      value: 'oracle',
-      unitName: 'Oracle',
-      url: 'http://localhost:4200/competence?unit=Oracle',
-    },
-    {
-      id: 'unit7',
-      value: 'cloud',
-      unitName: 'Cloud',
-      url: 'http://localhost:4200/competence?unit=Cloud',
-    },
-    {
-      id: 'unit8',
-      value: 'agile',
-      unitName: 'Agile',
-      url: 'http://localhost:4200/competence?unit=Agile',
-    },
-  ];
 }

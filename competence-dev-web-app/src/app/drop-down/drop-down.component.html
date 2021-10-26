@@ -9,7 +9,7 @@
         checked
       />
       <input
-        *ngFor="let unit of units"
+        *ngFor="let unit of objectArray"
         type="radio"
         name="item"
         id="{{ unit.id }}"
@@ -17,9 +17,9 @@
       />
     </summary>
     <ul class="list">
-      <li *ngFor="let unit of units">
+      <li *ngFor="let unit of objectArray">
         <label for="{{ unit.id }}">
-          <a href="{{ unit.url }}">
+          <a href="http://localhost:4200/competence?unit={{ unit.unitName }}">
             {{ unit.unitName }}
           </a>
         </label>
