@@ -114,4 +114,9 @@ label {
   display: block;
   cursor: pointer;
   padding: 1rem 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }

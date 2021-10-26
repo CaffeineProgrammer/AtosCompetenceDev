@@ -18,7 +18,12 @@
     </summary>
     <ul class="list">
       <li *ngFor="let unit of units">
-        <label for="{{ unit.id }}">{{ unit.unitName }}</label>
+        <label for="{{ unit.id }}">
+          <a href="#">
+            {{ unit.unitName }}
+          </a>
+          </label
+        >
       </li>
     </ul>
   </details>
