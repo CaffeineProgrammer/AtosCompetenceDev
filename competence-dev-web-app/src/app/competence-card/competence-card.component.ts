@@ -35,8 +35,6 @@ export class CompetenceCardComponent implements OnInit {
           );
         }
       }
-
-      console.log(this.competence);
     });
   }
 
