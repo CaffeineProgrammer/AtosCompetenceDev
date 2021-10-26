@@ -25,6 +25,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DropDownComponent } from './components/drop-down/drop-down.component';
 import { InfopageComponent } from './components/infopage/infopage.component';
 import { InfoComponent } from './components/info/info.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 @NgModule({
@@ -38,7 +42,8 @@ import { InfoComponent } from './components/info/info.component';
     DashboardComponent,
     DropDownComponent,
     InfopageComponent,
-    InfoComponent
+    InfoComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +60,9 @@ import { InfoComponent } from './components/info/info.component';
     MatListModule,
     MatDividerModule,
     MatMenuModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],
