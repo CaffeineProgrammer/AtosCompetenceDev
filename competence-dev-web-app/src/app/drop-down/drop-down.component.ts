@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 interface Unit {
   id: string;
@@ -12,7 +13,15 @@ interface Unit {
   styleUrls: ['./drop-down.component.scss'],
 })
 export class DropDownComponent implements OnInit {
-  constructor() {}
+  dropDownSelection: string = '';
+  
+  constructor(private route: ActivatedRoute) {
+    this.route.queryParams.subscribe((params) => {
+      let unit = params['unit'];
+
+      this.dropDownSelection = unit;
+    });
+  }
 
   ngOnInit(): void {}
 
