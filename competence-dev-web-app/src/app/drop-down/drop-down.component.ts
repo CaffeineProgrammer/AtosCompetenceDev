@@ -5,6 +5,7 @@ interface Unit {
   id: string;
   value: string;
   unitName: string;
+  url: string;
 }
 
 @Component({
@@ -14,7 +15,7 @@ interface Unit {
 })
 export class DropDownComponent implements OnInit {
   dropDownSelection: string = '';
-  
+
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe((params) => {
       let unit = params['unit'];
@@ -26,13 +27,53 @@ export class DropDownComponent implements OnInit {
   ngOnInit(): void {}
 
   units: Unit[] = [
-    { id: 'unit1', value: 'java', unitName: 'Java' },
-    { id: 'unit2', value: '.net', unitName: '.NET' },
-    { id: 'unit3', value: 'testing', unitName: 'Testing' },
-    { id: 'unit4', value: 'low coding', unitName: 'Low Coding' },
-    { id: 'unit5', value: 'business analyse', unitName: 'Business Analyse' },
-    { id: 'unit6', value: 'oracle', unitName: 'Oracle' },
-    { id: 'unit7', value: 'cloud', unitName: 'Cloud' },
-    { id: 'unit8', value: 'agile', unitName: 'Agile' },
+    {
+      id: 'unit1',
+      value: 'java',
+      unitName: 'Java',
+      url: 'http://localhost:4200/competence?unit=Java',
+    },
+    {
+      id: 'unit2',
+      value: '.net',
+      unitName: '.NET',
+      url: 'http://localhost:4200/competence?unit=.NET',
+    },
+    {
+      id: 'unit3',
+      value: 'testing',
+      unitName: 'Testing',
+      url: 'http://localhost:4200/competence?unit=Testing',
+    },
+    {
+      id: 'unit4',
+      value: 'low coding',
+      unitName: 'Low Coding',
+      url: 'http://localhost:4200/competence?unit=Low%20Coding',
+    },
+    {
+      id: 'unit5',
+      value: 'business analyse',
+      unitName: 'Business Analyse',
+      url: 'http://localhost:4200/competence?unit=Business%20Analyse',
+    },
+    {
+      id: 'unit6',
+      value: 'oracle',
+      unitName: 'Oracle',
+      url: 'http://localhost:4200/competence?unit=Oracle',
+    },
+    {
+      id: 'unit7',
+      value: 'cloud',
+      unitName: 'Cloud',
+      url: 'http://localhost:4200/competence?unit=Cloud',
+    },
+    {
+      id: 'unit8',
+      value: 'agile',
+      unitName: 'Agile',
+      url: 'http://localhost:4200/competence?unit=Agile',
+    },
   ];
 }
