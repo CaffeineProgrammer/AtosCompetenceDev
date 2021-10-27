@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DROP_DOWN_UNITS } from '../mock-drop-down-units';
+import { UNITS } from '../mock-units';
 
 @Component({
   selector: 'app-competence',
@@ -10,7 +10,7 @@ export class CompetencePageComponent implements OnInit {
   dropDownUnitItems: any;
 
   constructor() {
-    this.dropDownUnitItems = DROP_DOWN_UNITS;
+    this.dropDownUnitItems = UNITS;
   }
 
   ngOnInit(): void {}

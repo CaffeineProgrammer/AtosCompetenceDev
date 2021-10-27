@@ -1,11 +1,11 @@
 <div class="content-container">
-  <ng-container *ngFor="let c of competence">
-    <div class="competence-card-container {{ c.class }}">
+  <ng-container *ngFor="let competence of competences">
+    <div class="competence-card-container {{ competence.class }}">
       <div class="competence-card-title">
-        <h2>{{ c.competenceName }}</h2>
+        <h2>{{ competence.name }}</h2>
       </div>
       <div class="competence-card-presenter">
-        <p>By {{ c.presenter }}</p>
+        <p>By {{ competence.presenter }}</p>
       </div>
       <div class="competence-card-info">
         <p>
@@ -22,8 +22,7 @@
       <div class="competence-card-button">
         <button
           mat-button
-          [routerLink]="['/infopage']"
-          [queryParams]="{ competence: c.competenceName }"
+          (click)="onVisitCompetence(competence.name)"
         >
           <span class="competence-card-button__label">Visit</span>
         </button>

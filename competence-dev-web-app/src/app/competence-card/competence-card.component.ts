@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { COMPETENCES } from '../mock-competences';
 
 interface Unit {
@@ -8,7 +8,7 @@ interface Unit {
 }
 
 interface Competence {
-  competenceName: string;
+  name: string;
   presenter: string;
   content: string;
   class: string;
@@ -20,18 +20,17 @@ interface Competence {
   styleUrls: ['./competence-card.component.scss'],
 })
 export class CompetenceCardComponent implements OnInit {
-  competences: Unit[] = COMPETENCES;
+  allCompetences: Unit[] = COMPETENCES;
+  competences: Competence[] = [];
 
-  competence: Competence[] = [];
-
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private router: Router) {
     this.route.queryParams.subscribe((params) => {
       let unit = params['unit'];
 
-      for (let i = 0; i < this.competences.length; i++) {
-        if (this.competences[i].unitName === unit) {
-          this.competences[i].competence.forEach((obj) =>
-            this.competence.push(Object.assign({}, obj))
+      for (let i = 0; i < this.allCompetences.length; i++) {
+        if (this.allCompetences[i].unitName === unit) {
+          this.allCompetences[i].competence.forEach((obj) =>
+            this.competences.push(Object.assign({}, obj))
           );
         }
       }
@@ -39,6 +38,13 @@ export class CompetenceCardComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  onVisitCompetence(competenceName: string) {
+    this.router.navigate(['/infopage'], {
+      queryParams: { competence: competenceName },
+      queryParamsHandling: 'merge',
+    });
+  }
 }
 
 // type Competence = Array<{ title: string; presenter: string; content: string }>;

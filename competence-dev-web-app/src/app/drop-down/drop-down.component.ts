@@ -1,12 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DROP_DOWN_UNITS } from '../mock-drop-down-units';
-
-interface Unit {
-  id: string;
-  value: string;
-  unitName: string;
-}
 
 @Component({
   selector: 'app-drop-down',
@@ -20,8 +13,13 @@ export class DropDownComponent implements OnInit {
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe((params) => {
       let unit = params['unit'];
+      let competence = params['competence'];
 
-      this.dropDownSelection = unit;
+      if (competence) {
+        this.dropDownSelection = competence;
+      } else {
+        this.dropDownSelection = unit;
+      }
     });
   }
 

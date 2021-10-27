@@ -9,18 +9,18 @@
         checked
       />
       <input
-        *ngFor="let unit of objectArray"
+        *ngFor="let object of objectArray"
         type="radio"
         name="item"
-        id="{{ unit.id }}"
-        title="{{ unit.unitName }}"
+        id="{{ object.id }}"
+        title="{{ object.name }}"
       />
     </summary>
     <ul class="list">
-      <li *ngFor="let unit of objectArray">
-        <label for="{{ unit.id }}">
-          <a href="http://localhost:4200/competence?unit={{ unit.unitName }}">
-            {{ unit.unitName }}
+      <li *ngFor="let object of objectArray">
+        <label for="{{ object.id }}">
+          <a href="http://localhost:4200/{{ object.url }}">
+            {{ object.name }}
           </a>
         </label>
       </li>
