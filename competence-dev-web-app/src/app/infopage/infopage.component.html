@@ -1,4 +1,8 @@
 <div class="infopage-container">
+  <button mat-button (click)="onBack()">
+    <mat-icon>chevron_left</mat-icon>Back
+  </button>
+
   <div class="infopage-container__title"><h1>Placeholder Competence</h1></div>
 
   <app-drop-down [objectArray]="dropDownCompetenceItems"></app-drop-down>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { COMPETENCES } from '../mock-competences';
 
 @Component({
@@ -9,13 +9,14 @@ import { COMPETENCES } from '../mock-competences';
 })
 export class InfopageComponent implements OnInit {
   dropDownCompetenceItems: any;
+  currentQueryParam: string = '';
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private router: Router) {
     this.route.queryParams.subscribe((params) => {
-      let unit = params['unit'];
+      this.currentQueryParam = params['unit'];
 
       for (let i = 0; i < COMPETENCES.length; i++) {
-        if (COMPETENCES[i].unitName === unit) {
+        if (COMPETENCES[i].unitName === this.currentQueryParam) {
           this.dropDownCompetenceItems = COMPETENCES[i].competence;
         }
       }
@@ -23,4 +24,10 @@ export class InfopageComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  onBack() {
+    this.router.navigate(['/competence'], {
+      queryParams: { unit: this.currentQueryParam },
+    });
+  }
 }
