@@ -1,13 +1,7 @@
 <div class="drop-down-list-container">
   <details class="custom-select">
     <summary class="radios">
-      <input
-        type="radio"
-        name="item"
-        id="default"
-        title="{{ dropDownSelection }}"
-        checked
-      />
+      {{ dropDownSelection }}
       <input
         *ngFor="let object of objectArray"
         type="radio"
