@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UNITS } from '../mock-units';
 
 @Component({
@@ -8,9 +8,13 @@ import { UNITS } from '../mock-units';
   styleUrls: ['./competence-page.component.scss'],
 })
 export class CompetencePageComponent implements OnInit {
+  title: string = '';
   dropDownUnitItems: any;
 
-  constructor(private router: Router) {
+  constructor(private route: ActivatedRoute, private router: Router) {
+    this.route.queryParams.subscribe((params) => {
+      this.title = params['unit'];
+    });
     this.dropDownUnitItems = UNITS;
   }
 
