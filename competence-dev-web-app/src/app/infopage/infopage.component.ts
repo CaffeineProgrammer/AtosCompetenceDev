@@ -9,14 +9,16 @@ import { COMPETENCES } from '../mock-competences';
 })
 export class InfopageComponent implements OnInit {
   dropDownCompetenceItems: any;
-  currentQueryParam: string = '';
+  currentUnitQueryParam: string = '';
+  title: string = '';
 
   constructor(private route: ActivatedRoute, private router: Router) {
     this.route.queryParams.subscribe((params) => {
-      this.currentQueryParam = params['unit'];
+      this.currentUnitQueryParam = params['unit'];
+      this.title = params['competence'];
 
       for (let i = 0; i < COMPETENCES.length; i++) {
-        if (COMPETENCES[i].unitName === this.currentQueryParam) {
+        if (COMPETENCES[i].unitName === this.currentUnitQueryParam) {
           this.dropDownCompetenceItems = COMPETENCES[i].competence;
         }
       }
@@ -27,7 +29,7 @@ export class InfopageComponent implements OnInit {
 
   onBack() {
     this.router.navigate(['/competence'], {
-      queryParams: { unit: this.currentQueryParam },
+      queryParams: { unit: this.currentUnitQueryParam },
     });
   }
 }
