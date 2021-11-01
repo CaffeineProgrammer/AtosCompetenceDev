@@ -18,12 +18,12 @@ export class CompetenceCardComponent implements OnInit {
   competences: Competence[] = [];
 
   constructor(private route: ActivatedRoute, private router: Router) {
-    this.retrieveCompetencesFromList();
+    this.getCompetencesFromList();
   }
 
   ngOnInit(): void {}
 
-  retrieveCompetencesFromList() {
+  getCompetencesFromList() {
     this.route.queryParams.subscribe((params) => {
       let unit = params['unit'];
 
