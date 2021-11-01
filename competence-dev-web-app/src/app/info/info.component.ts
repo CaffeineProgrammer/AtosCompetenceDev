@@ -24,7 +24,7 @@ export class InfoComponent implements OnInit {
               COMPETENCES[i].competence[j].name === currentCompetenceQueryParam
             ) {
               this.title = COMPETENCES[i].competence[j].name;
-              this.presenter = COMPETENCES[i].competence[j].presenter;
+              this.presenter = COMPETENCES[i].competence[j].host;
               this.description = COMPETENCES[i].competence[j].content;
             }
           }

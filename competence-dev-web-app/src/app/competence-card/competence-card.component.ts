@@ -9,7 +9,7 @@ interface Unit {
 
 interface Competence {
   name: string;
-  presenter: string;
+  host: string;
   content: string;
   class: string;
 }
