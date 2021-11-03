@@ -2,6 +2,11 @@
   flex-direction: column;
   margin: 50px 10% 0 10%;
 
+  button {
+    padding: 0;
+    right: 13px;
+  }
+
   &__title {
     display: flex;
     justify-content: center;

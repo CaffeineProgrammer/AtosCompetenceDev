@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UNITS } from '../mock-units';
+
+interface Unit {
+  name: string;
+  content: string;
+  class: string;
+  isFavorite: boolean;
+}
 
 @Component({
   selector: 'app-unit-card',
@@ -6,64 +15,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./unit-card.component.scss'],
 })
 export class UnitCardComponent implements OnInit {
-  units: Unit = [
-    {
-      title: 'Java',
-      content: 'test',
-      class: 'unit-card-container--blue',
-      isFavorite: false,
-    },
-    {
-      title: '.NET',
-      content: 'test',
-      class: 'unit-card-container--blue',
-      isFavorite: false,
-    },
-    {
-      title: 'Testing',
-      content: 'test',
-      class: 'unit-card-container--green',
-      isFavorite: false,
-    },
-    {
-      title: 'Low Coding',
-      content: 'test',
-      class: 'unit-card-container--green',
-      isFavorite: false,
-    },
-    {
-      title: 'Business Analyse',
-      content: 'test',
-      class: 'unit-card-container--purple',
-      isFavorite: false,
-    },
-    {
-      title: 'Oracle',
-      content: 'test',
-      class: 'unit-card-container--purple',
-      isFavorite: false,
-    },
-    {
-      title: 'Cloud',
-      content: 'test',
-      class: 'unit-card-container--red',
-      isFavorite: false,
-    },
-    {
-      title: 'Agile',
-      content: 'test',
-      class: 'unit-card-container--red',
-      isFavorite: false,
-    },
-  ];
+  units: Unit[] = UNITS;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 
-  public toggleFavoriteButton(title: string) {
+  toggleFavoriteButton(unitName: string) {
     this.units.find((e, i) => {
-      if (e.title === title) {
+      if (e.name === unitName) {
         if (this.units[i].isFavorite === false) {
           this.units[i].isFavorite = true;
         } else {
@@ -72,11 +32,10 @@ export class UnitCardComponent implements OnInit {
       }
     });
   }
-}
 
-type Unit = Array<{
-  title: string;
-  content: string;
-  class: string;
-  isFavorite: boolean;
-}>;
+  onVisitUnit(unitName: string) {
+    this.router.navigate(['/competence'], {
+      queryParams: { unit: unitName },
+    });
+  }
+}

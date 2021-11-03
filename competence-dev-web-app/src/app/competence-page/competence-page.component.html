@@ -1,0 +1,11 @@
+<div class="flex-container">
+  <button mat-button (click)="onBack()">
+    <mat-icon>chevron_left</mat-icon>Back
+  </button>
+
+  <div class="flex-container__title"><h1>{{ title }}</h1></div>
+
+  <app-drop-down [objectArray]="dropDownUnitItems"></app-drop-down>
+
+  <app-competence-card></app-competence-card>
+</div>

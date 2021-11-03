@@ -1,12 +1,13 @@
 .content-container {
   display: grid;
-  margin-top: 50px;
+  margin-top: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 30px 34px;
   grid-auto-flow: row;
 
   @media (max-width: 1024px) {
+    margin-top: 1rem;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -15,17 +16,13 @@
   }
 
   @media (max-width: 375px) {
+    margin-top: 1rem;
     grid-template-columns: 1fr;
   }
 }
 
 .content-container:last-child {
   margin-bottom: 30px;
-}
-
-.unit:hover {
-  box-shadow: 4px 3px 11px 6px #000;
-  transform: translateY(-3px);
 }
 
 .unit-card-container {
@@ -38,46 +35,42 @@
   border-radius: 5px;
 
   &--blue {
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 148, 255, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 148, 255, 1) 100%);
   }
 
   &--green {
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 163, 155, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 163, 155, 1) 100%);
   }
 
   &--purple {
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(163, 117, 255, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(163, 117, 255, 1) 100%);
   }
 
   &--red {
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(248, 80, 80, 1) 100%
-    );
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(248, 80, 80, 1) 100%);
   }
+}
 
-  &__header {
-    width: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
+.unit-card-container:hover {
+  box-shadow: 4px 3px 11px 6px #000;
+  transform: translateY(-3px);
+}
 
-  &__header h2 {
+.unit-card-header {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h2 {
     margin: 0;
     font-family: "Raleway";
     font-weight: bold;
@@ -86,34 +79,35 @@
   &__fav-button--active {
     color: red;
   }
+}
 
-  &__info {
-    display: -webkit-box;
-    align-self: flex-start;
-    line-height: 2;
-    margin-bottom: 10px;
-    overflow: hidden;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+.unit-card-info {
+  height: 112px;
+  display: -webkit-box;
+  align-self: flex-start;
+  line-height: 2;
+  margin-bottom: 10px;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 
-    @media (max-width: 1024px) {
-      -webkit-line-clamp: 3;
-    }
-  }
-
-  &__info p {
+  p {
     font-family: "Raleway";
   }
 
-  &__button {
-    align-self: flex-start;
+  @media (max-width: 1024px) {
+    -webkit-line-clamp: 3;
+  }
+}
 
-    &__label {
-      font-family: "Raleway";
-    }
+.unit-card-button {
+  align-self: flex-start;
+
+  &__label {
+    font-family: "Raleway";
   }
 
-  &__button button {
+  button {
     align-self: flex-start;
     padding: 16px 34px;
     border: 1px solid;
