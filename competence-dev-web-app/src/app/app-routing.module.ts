@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { CompetenceComponent } from './components/competence/competence.component';
-import { InfopageComponent } from './components/infopage/infopage.component';
+import { HomeComponent } from './home/home.component';
+import { InfopageComponent } from './infopage/infopage.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CompetencePageComponent } from './competence-page/competence-page.component';
 
 const routes: Routes = [
   {
@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'competence',
-    component: CompetenceComponent,
+    component: CompetencePageComponent,
   },
   {
     path: 'infopage',
@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+  },
+  {
+    path: '**',
+    component: HomeComponent,
   },
 ];
 
