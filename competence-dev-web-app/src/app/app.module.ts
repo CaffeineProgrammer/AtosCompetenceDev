@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -26,9 +27,14 @@ import { DropDownComponent } from './components/drop-down/drop-down.component';
 import { InfopageComponent } from './components/infopage/infopage.component';
 import { InfoComponent } from './components/info/info.component';
 import { CalendarComponent } from './components/calendar/calendar.component'
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import { FullCalendarModule } from '@fullcalendar/angular'; 
+import interactionPlugin from '@fullcalendar/interaction';
+import dayGridPlugin from '@fullcalendar/daygrid';
 
+FullCalendarModule.registerPlugins([ 
+  interactionPlugin,
+  dayGridPlugin
+]);
 
 
 @NgModule({
@@ -60,8 +66,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatListModule,
     MatDividerModule,
     MatMenuModule,
-    MatDatepickerModule,
-    MatNativeDateModule
+    FullCalendarModule,
+    HttpClientModule  
   ],
   providers: [],
   bootstrap: [AppComponent],
