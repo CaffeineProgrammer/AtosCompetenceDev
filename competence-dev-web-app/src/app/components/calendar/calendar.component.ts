@@ -15,6 +15,7 @@ export class CalendarComponent {
     calendarOptions: CalendarOptions;
     
     constructor(private httpClient: HttpClient) { }
+    
 
     onDateClick(res) {
       alert('Clicked on date : ' + res.dateStr)
@@ -38,5 +39,4 @@ export class CalendarComponent {
       }, 2500);
           
       }  
-
 }
