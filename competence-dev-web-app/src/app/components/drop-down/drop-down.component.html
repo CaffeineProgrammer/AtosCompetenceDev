@@ -1,0 +1,25 @@
+<div class="drop-down-list-container">
+  <details class="custom-select">
+    <summary class="radios">
+      <input
+        type="radio"
+        name="item"
+        id="default"
+        title="Select a competence"
+        checked
+      />
+      <input
+        *ngFor="let unit of units"
+        type="radio"
+        name="item"
+        id="{{ unit.id }}"
+        title="{{ unit.unitName }}"
+      />
+    </summary>
+    <ul class="list">
+      <li *ngFor="let unit of units">
+        <label for="{{ unit.id }}">{{ unit.unitName }}</label>
+      </li>
+    </ul>
+  </details>
+</div>
