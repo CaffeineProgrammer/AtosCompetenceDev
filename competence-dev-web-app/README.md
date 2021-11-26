@@ -28,3 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Bugs
 - The application doesn't scale well when the side menu is being opened on iPhone/iPad format
+- The favorite button resets when the page is being refreshed
+- Change the font of the calendar and the month to "Raleway"
+- The buttons "Apply as expert" and "Apply as attendee" are missing beneath the calendar
